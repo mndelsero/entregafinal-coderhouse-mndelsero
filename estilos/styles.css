@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;400;700&display=swap');
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+h2 {
+    font-family: none;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+h5 {
+    font-style: italic;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+
+
+
+/* Inicio */
+.encabezado {
+    background-color: #18337E;
+    display: flex;
+    gap: 2rem;
+    align-items: end;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+
+
+
+}
+
+
+.tituloredes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.escudo {
+    width: 55px;
+    display: inline;
+    border-radius: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+
+    border: #2d283d solid 2px;
+}
+
+.titulomenu {
+    font-family: 'Inter', sans-serif;
+    display: inline;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+
+    color: #9B80FF;
+}
+
+.fbmenu {
+    display: inline;
+
+    width: 41px;
+    margin-inline: 1rem;
+
+    border-radius: 100px;
+
+}
+
+.mailmenu {
+    display: inline;
+    width: 49px;
+
+}
+
+
+
+.menuindex {
+    display: flex;
+    background-color: #18337E;
+    flex-direction: row;
+    align-items: end;
+
+    justify-content: start;
+
+
+}
+
+
+.menu {
+
+
+    background-color: #382967;
+    min-width: 100%;
+
+    border: solid 1px #9B80FF;
+    margin: 2px;
+    padding: 20px 20px 15px 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #9B80FF;
+
+
+
+}
+
+
+
+
+
+
+
+.mainindex {
+    background-color: #9B80FF;
+
+}
+
+.fotoinicio {
+    padding: 50px;
+    border-bottom: solid 6px black;
+}
+
+.fotorectores {
+    width: 100%;
+
+
+    border-radius: 20px;
+}
+
+
+
+.facultades {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2d283d;
+
+}
+
+.cartitas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opciones button {
+    align-self: center;
+    padding-inline: 2rem;
+}
+
+.cartaingenieria {
+
+    margin: 50px;
+    left: 100px;
+
+}
+
+.facultadestitulo {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding-inline: 3rem;
+}
+
+.tituloingenieria {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.titulohumanidades {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.tituloinformatica {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.imageningenierias {
+
+    border-radius: 50%;
+
+    width: 200px;
+    min-height: 200px;
+    background: url(Ingenierias fondo.jpg);
+
+}
+
+
+
+
+.cartahumanidades {
+
+    margin: 50px;
+
+    left: 100px;
+}
+
+
+
+.imagenhumanidades {
+
+    border-radius: 50%;
+
+    width: 200px;
+    min-height: 200px;
+
+    background: url(ciencias humanas fondo.jpg);
+
+}
+
+
+
+.cartainformatica {
+
+
+    margin: 50px;
+    left: 500px;
+
+    left: 100px;
+}
+
+
+
+.imageninformatica {
+
+    border-radius: 50%;
+
+    width: 200px;
+    min-height: 200px;
+
+    background: url(carreras informaticas.png);
+
+}
+
+
+
+.pieindex {
+    display: flex;
+    justify-content: space-evenly;
+
+
+    background: #18337E;
+    border-top: 6px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    padding: 40px;
+
+
+
+
+}
+
+.piedivision {
+    border-right: #9B80FF solid 2px;
+    padding: 10px;
+}
+
+
+.pietitulo {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #9B80FF;
+
+}
+
+
+.piecontacto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #9B80FF;
+
+}
+
+.ayuda {
+    border: none;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Carreras */
+.carreras-main {
+    background-color: #5DD9C1;
+
+}
+
+.carreras-mn-tit {
+    padding-block: 20px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+/*menu tarjetitas----------------------------------------------*/
+
+
+.tarjetitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.tarjetitas img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin: 0;
+    border-radius: 50%;
+
+}
+
+
+.tarjetita {
+    display: grid;
+    grid-template-areas:
+        "img txt"
+        "btn btn";
+    background-color: #665687;
+    margin-inline: 1rem;
+    margin-block: 1rem;
+    border-radius: 20px;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.tarjetita-img {
+
+    align-items: start;
+    margin: 0;
+    grid-area: img;
+}
+
+.tarjetita-txt {
+
+    margin: 0;
+    grid-area: txt;
+
+}
+
+.tarj-btn {
+    grid-area: btn;
+    margin: 1rem;
+    margin-top: 0;
+    align-self: end;
+
+}
+
+
+/*---------------------------------------------Contacto----------*/
+
+.main-contacto {
+    background-color: #5DD9C1;
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+}
+
+.contacto-sctn {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+.contacto-mn-tit {
+    font-family: 'Inter';
+
+}
+
+
+
+
+
+
+.contacto-fb-img {
+    display: inline;
+
+    width: 41px;
+    margin-inline: 1rem;
+
+    border-radius: 50%;
+}
+
+.contacto-mail-img {
+    display: inline;
+
+    width: 41px;
+    margin-inline: 1rem;
+
+    border-radius: 5px;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-sctn-form {
+    background-color: #9B80FF;
+    padding: 2rem 5rem 2rem 5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+input {
+    border: #18337E 2px solid;
+    border-radius: 5px;
+    margin-inline: 1rem;
+    width: min-content;
+}
+
+textarea {
+    border: #18337E 2px solid;
+    border-radius: 5px;
+    margin-inline: 1rem;
+    width: min-content;
+
+}
+
+.contacto-form-btn {
+    align-self: center;
+    justify-self: center;
+    color: white;
+    background-color: #18337E;
+    border: #5DD9C1 solid 2px;
+    border-radius: 5px;
+    padding-block: 0.5rem;
+    padding-inline: 2rem;
+}
+
+#carreras-preferidas {
+    margin: 1rem;
+}
+
+
+
+/*Quienes somos-------------------------------------------------------*/
+.main-qs-tit h2 {
+    background-color: #B084CC;
+    font-family: 'Inter';
+    font-size: 2rem;
+
+}
+
+
+.qs-grid-sctn {
+    background-image: url(../img/quienes\ somos\ fondo.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "rec obj"
+        "rec pro";
+    padding: 3rem;
+}
+
+.qs-sctn {
+    background-color: #B084CC;
+    border-radius: 20px;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.qs-sctn h2 {
+    font-family: 'Inter';
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.qs-sctn p {
+    line-height: 2rem;
+
+}
+
+.qs-rectorado {
+    grid-area: rec;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "tit img"
+        "p2 p2";
+    align-items: center;
+}
+
+.qs-rectorado-tit {
+    grid-area: tit;
+}
+
+.qs-mau-img {
+    grid-area: img;
+}
+
+.qs-rectorado-p2 {
+    grid-area: p2;
+}
+
+.qs-rectorado img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.qs-rectorado-p1 {
+    font-weight: 600;
+}
+
+
+.qs-objetivo {
+    grid-area: obj;
+}
+
+.qs-proyecto {
+    grid-area: pro;
+}
+
+/*Ingreso2024--------------------------------------------------------*/
+.ingreso-mn {
+    background-color: #5DD9C1;
+    padding: 1rem;
+}
+
+.ingreso-mn h2 {
+    font-family: 'Inter';
+    font-size: 3rem;
+
+}
+
+.ingreso-cart {
+    background-color: #9B80FF;
+    border-radius: 20px;
+    margin: 3rem;
+    padding: 5rem;
+}
+
+
+.ingreso-cart h3 {
+    color: white;
+    line-height: 8rem;
+}
+
+.ingreso-cart p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+
+
+/*Medias Qerieeees---------------------*/
+
+@media screen and (max-width:1200px) and (min-width:877px) {
+
+
+
+    .tarjetita {
+
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1rem;
+        margin-block: 1rem;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .tarjetita button {
+        align-self: center;
+        margin: 1rem;
+        margin-top: 0;
+        justify-self: end;
+    }
+
+
+}
+
+/*Tablet------------------------------------------------*/
+@media screen and (max-width:1024px) and (min-width:877px) {
+
+
+    /*Inicio*/
+    .encabezado {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .cartitas {
+        flex-direction: column;
+    }
+
+    /*Carreras*/
+
+}
+
+
+
+/*Mobile---------------------------------------------------*/
+@media screen and (max-width:876px) {
+
+    /*Inicio*/
+    .encabezado {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .tituloredes {
+        flex-wrap: wrap;
+    }
+
+    .menu-sctn {
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .menuindex {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding-left: 0px;
+        padding-right: 1rem;
+    }
+
+    .menu-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        margin-left: 5px;
+
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainindex {
+        margin: 0;
+        padding: 0;
+    }
+
+    .facultadestitulo {
+        align-items: center;
+        padding: 0;
+        margin: 0rem;
+
+    }
+
+    .cartitas {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .opciones {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pieindex {
+        flex-direction: column;
+        padding: 2px;
+
+    }
+
+    .piedivision {
+        border-right: none;
+        border-bottom: #9B80FF solid 2px;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .piedivision {
+        margin: 0px;
+        padding: 1rem;
+    }
+
+    /*Carreras*/
+    .tarjetita {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjetitas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+
+
+}
+
+@media screen and (max-width:600px) {
+    .tarjetita {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjetitas {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+ 
+
+    .ingreso-cart p {
+        color: white;
+        font-size: smaller;
+        line-height: 2rem;
+    }
+
+    .ingreso-cart h3 {
+        color: white;
+        line-height: 3rem;
+        font-size: smaller;
+    }
+    .ingreso-cart {
+        background-color: #9B80FF;
+        border-radius: 20px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .ingreso-mn {
+        background-color: #5DD9C1;
+        padding: 1rem;
+    }
+    
+    .ingreso-mn h2 {
+        font-family: 'Inter';
+        font-size: 1rem;
+    
+    }
+
+}
+
+/*Small--------------------------*/
+@media screen and (max-width:299px) {
+
+    /*inicio*/
+
+    .piedivision p {
+
+        font-size: smaller;
+    }
+
+    .opciones h2 {
+        font-size: smaller;
+    }
+
+    /*Ingreso*/
+
+    .ingreso-cart p {
+        color: white;
+        font-size: smaller;
+        line-height: 1rem;
+    }
+
+    .ingreso-cart h3 {
+        color: white;
+        line-height: 3rem;
+        font-size: smaller;
+    }
+    .ingreso-cart {
+        background-color: #9B80FF;
+        border-radius: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .ingreso-mn {
+        background-color: #5DD9C1;
+        padding: 1rem;
+    }
+    
+    .ingreso-mn h2 {
+        font-family: 'Inter';
+        font-size: 1rem;
+    
+    }
+}
