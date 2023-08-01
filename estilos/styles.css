@@ -561,6 +561,8 @@ textarea {
 
 .qs-rectorado-p2 {
     grid-area: p2;
+    margin-block: 1rem;
+  
 }
 
 .qs-rectorado img {
@@ -570,6 +572,7 @@ textarea {
 
 .qs-rectorado-p1 {
     font-weight: 600;
+    margin-block: 1rem;
 }
 
 
@@ -639,6 +642,24 @@ textarea {
         justify-self: end;
     }
 
+    /*quienes somos-----------*/
+
+    .qs-grid-sctn {
+        background-position: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:
+            "rec obj"
+            "pro pro";
+        padding: 1rem;
+    }
+    
+    .qs-sctn {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
 
 }
 
@@ -659,7 +680,26 @@ textarea {
         flex-direction: column;
     }
 
-    /*Carreras*/
+    /*Quienes somos ------------------------------*/
+    /*quienes somos-----------*/
+
+    .qs-grid-sctn {
+        background-position: center;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:
+            "rec obj"
+            "pro pro";
+        padding: 1rem;
+    }
+    
+    .qs-sctn {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
 
 }
 
@@ -760,12 +800,61 @@ textarea {
         grid-template-rows: 1fr 1fr 1fr;
 
     }
+/*contacto-----------------------*/
+.main-contacto{
+    flex-direction: column;
+}
+
+.contacto-form textarea{
+width: 100%;
+    margin-inline: 2px;
+}
+
+.contacto-form label{
+    margin-block: 0.5rem;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    margin: 0;
+}
+#carreras-preferidas{
+    width: 3rem;
+    margin-inline: 0;
+ 
+}
+/*Quienes Somos ----------------------------------------------*/
+.qs-grid-sctn {
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.qs-sctn {
+    margin: 1rem;
+    padding: 1rem;
+    height: max-content;
+
+}
+.qs-rectorado{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 }
 
 @media screen and (max-width:600px) {
+
+    .fotoinicio {
+        padding: 0.5rem;
+    }
+
+
     .tarjetita {
         display: flex;
         flex-direction: column;
@@ -773,11 +862,11 @@ textarea {
 
     .tarjetitas {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
 
     }
- 
+
 
     .ingreso-cart p {
         color: white;
@@ -790,30 +879,55 @@ textarea {
         line-height: 3rem;
         font-size: smaller;
     }
+
     .ingreso-cart {
         background-color: #9B80FF;
         border-radius: 20px;
         margin: 1rem;
         padding: 1rem;
     }
-    
+
     .ingreso-mn {
         background-color: #5DD9C1;
         padding: 1rem;
     }
-    
+
     .ingreso-mn h2 {
         font-family: 'Inter';
         font-size: 1rem;
-    
+
     }
 
+    /*contacto------------------*/
+    .contacto-sctn-form{
+        padding: 1rem;
+    }
+     .contacto-form{
+        flex-wrap: wrap;
+        align-items: start;
+        padding: 5px;
+        width: fit-content;
+     }
+
+
+     /*Quienes Somos ----------------------------------------------*/
+
+     .qs-grid-sctn{
+        padding: 1rem;
+     }
+
+     .qs-sctn{
+        margin: 0.3rem;
+
+     }
 }
 
 /*Small--------------------------*/
 @media screen and (max-width:299px) {
 
     /*inicio*/
+
+
 
     .piedivision p {
 
@@ -837,21 +951,50 @@ textarea {
         line-height: 3rem;
         font-size: smaller;
     }
+
     .ingreso-cart {
         background-color: #9B80FF;
         border-radius: 20px;
         margin: 0px;
         padding: 0px;
     }
-    
+
     .ingreso-mn {
         background-color: #5DD9C1;
         padding: 1rem;
     }
-    
+
     .ingreso-mn h2 {
         font-family: 'Inter';
         font-size: 1rem;
-    
+
     }
+
+         /*Quienes Somos ----------------------------------------------*/
+
+         .qs-sctn{
+            font-size: smaller;
+            line-gap-override: 1rem;
+    
+         }
 }
+
+
+
+
+/*Hola Mauro! Como andas?
+
+Muchas gracias por realizar la entrega!
+
+Está todo muy bien! Cumple con todas las consignas y está muy bien hecho y bastante prolijo! 
+
+En cuanto a contenido esta muy bien, completito, lo que si que podría aconsejarte, es ver si puedes hacer que el logo o el texto que tienes de "Universidad La Angostura" que también te redirija al inicio y esos iconos de facebook y gmail pueden estar tranquilamente en el footer y quedaría hasta mejor (ya que ahí tienes algo de información de contacto y redes).
+
+En otras partes, como en "Quienes Somos" como que el fondo de los párrafos, es muy chocante con respecto al fondo, se lo puede bajar un poco la opacidad para que quede más incluido en el fondo y quede mejor, pero eso lo puedes ir viendo luego!
+
+Otra cosita a mencionar, es que tu archivo html llamado "carreras" está con mayúscula y eso normalmente no lo hacemos, siempre intentamos mantenerlo en minúsculas!
+
+Fuera de eso, esta todo bastante bien!
+
+Saludos*/
+
