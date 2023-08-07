@@ -1,0 +1,382 @@
+/*Cartitas Inicio------------------------------------------*/
+.cartitas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+
+    }
+
+    @include tablet-mini {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .opciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        border-radius: 20px;
+        padding: 2rem;
+        transition: all, 0.3s;
+        -webkit-animation: kenburns-top 5s ease-out infinite alternate both;
+        animation: kenburns-top 2s ease-out infinite alternate both;
+
+        & h2 {
+            @include mobile-mini {
+                font-size: smaller;
+            }
+        }
+
+        &:hover {
+            border: $menucolor solid 0.2rem;
+        }
+
+        &button {
+            align-self: center;
+            padding-inline: 2rem;
+
+        }
+
+        @include desktop-mini {
+            margin-inline: 0;
+
+            -webkit-animation: none;
+        }
+
+        @include tablet-mini {
+            margin-block: 4rem;
+            margin-inline: 0;
+            padding: 0;
+        }
+
+        @include mobile-mini {
+            -webkit-animation: none;
+        }
+    }
+
+    .cartaingenieria {
+
+        .imageningenierias {
+
+            border-radius: 50%;
+
+            width: 200px;
+            min-height: 200px;
+            background-image: url(Ingenieriasfondo.jpg);
+
+        }
+
+
+        .tituloingenieria {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+
+    }
+
+    .cartahumanidades {
+
+        .imagenhumanidades {
+
+            border-radius: 50%;
+
+            width: 200px;
+            min-height: 200px;
+
+            background: url(cienciashumanasfondo.jpg);
+
+        }
+
+        .titulohumanidades {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+
+    }
+
+    .cartainformatica {
+
+        .imageninformatica {
+
+            border-radius: 50%;
+
+            width: 200px;
+            min-height: 200px;
+
+            background: url(carrerasinformaticas.png);
+
+        }
+
+        .tituloinformatica {
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+    }
+
+    $facultades: (
+        ingenieria: #2b62a1,
+        humanidades: #6b268e,
+        informatica: #278596
+    );
+
+@each $facultad,
+$colorfacultad in $facultades {
+
+    .carta#{$facultad} {
+        background-color: $colorfacultad;
+    }
+}
+
+}
+
+
+
+
+
+/*Tarjetitas de Carreras------------------------------*/
+.tarjetitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    @include desktop-mini {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    @include tablet-mini {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+
+    & img {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        margin: 0;
+        border-radius: 50%;
+
+    }
+
+    .tarjetita {
+        display: grid;
+        grid-template-areas:
+            "img txt"
+            "btn btn";
+        background-color: $tarjetitasColor;
+        margin-inline: 1rem;
+        margin-block: 1rem;
+        border-radius: 20px;
+        align-items: start;
+        justify-content: center;
+        transition: all, 0.5s;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        &:hover {
+            transform: scale(1.1) translateY(-30px);
+        }
+
+        @include desktop-mini {
+            display: flex;
+            flex-direction: column;
+            margin-inline: 1rem;
+            margin-block: 1rem;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .tarjetita-img {
+
+            align-items: start;
+            margin: 0;
+            grid-area: img;
+        }
+
+        .tarjetita-txt {
+
+            margin: 0;
+            grid-area: txt;
+
+        }
+
+        .tarj-btn {
+            grid-area: btn;
+            margin: 1rem;
+            margin-top: 0;
+            align-self: end;
+
+            -webkit-animation: jello-horizontal 2s 2s both;
+            animation: jello-horizontal 2s 2s both;
+
+            @include desktop-mini {
+                align-self: center;
+                margin: 1rem;
+                margin-top: 0;
+                justify-self: end;
+            }
+
+        }
+
+    }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-6 17:21:50
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%
+    }
+
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top
+    }
+}
+
+@keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%
+    }
+
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-6 17:35:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, .75, 1);
+        transform: scale3d(1.25, .75, 1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        transform: scale3d(.75, 1.25, 1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, .85, 1);
+        transform: scale3d(1.15, .85, 1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, .75, 1);
+        transform: scale3d(1.25, .75, 1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        transform: scale3d(.75, 1.25, 1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, .85, 1);
+        transform: scale3d(1.15, .85, 1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}

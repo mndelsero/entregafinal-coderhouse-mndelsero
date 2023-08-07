@@ -1,0 +1,77 @@
+.pieindex {
+    display: flex;
+    justify-content: space-evenly;
+    background: $menucolor;
+    border-top: 6px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    padding: 40px;
+
+    @include tablet-mini {
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .piedivision {
+        border-right: #9B80FF solid 2px;
+        padding: 10px;
+
+        @include tablet-mini {
+            border-right: none;
+            border-bottom: $mainColor solid 2px;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        & p {
+            @include mobile-mini {
+                font-size: smaller;
+            }
+        }
+
+        .pietitulo {
+
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+
+            color: $mainColor;
+
+        }
+
+        .piecontacto {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+
+            color: $mainColor;
+
+        }
+
+        .fbmenu {
+            display: inline;
+            width: 41px;
+            margin-inline: 1rem;
+            border-radius: 100px;
+
+        }
+
+        .mailmenu {
+            display: inline;
+            width: 49px;
+
+        }
+
+
+    }
+
+    .ayuda {
+        border: none;
+    }
+
+
+}

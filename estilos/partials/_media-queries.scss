@@ -1,0 +1,39 @@
+/*desktopmini--------------------------*/
+
+@mixin desktop-mini {
+    @media screen and (max-width:1200px) and (min-width:1025px) {
+        @content;
+    }
+}
+/*tablet --------------------------------*/
+
+@mixin tablet {
+    @media screen and (max-width:1024px) and (min-width:877px){
+        @content;
+    }
+}
+
+
+/*tabletmini----------------------------*/
+
+@mixin tablet-mini {
+    @media screen and (max-width:876px){
+        @content;
+    }
+}
+
+/*mobile--------------------------------*/
+
+@mixin mobile {
+    @media screen and (max-width:600px){
+        @content;
+    }
+}
+
+/*mobile mini-----------------------------------*/
+
+@mixin mobile-mini{
+    @media screen and (max-width:299px){
+        @content;
+    }
+}

@@ -1,3 +1,32 @@
- ul{
-    width: fit-content;
- }
+$menucolor: #18337E;
+
+$menuItemColor: #382967;
+
+$secondaryColor:#5DD9C1;
+
+$mainColor:#9B80FF;
+
+$tarjetitasColor:#665687;
+
+$qsColor:#B084CC;
+
+$mainFont: sans-serif;
+
+$colortitulo:#2d283d;
+
+%titulos{
+    font-family: $mainFont ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    
+    color: $colortitulo;
+}
+
+@mixin tamanotexto($tamano, $alto) {
+
+    color: white;
+    font-size: $tamano;
+    line-height: $alto;
+
+}

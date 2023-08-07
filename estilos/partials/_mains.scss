@@ -1,0 +1,444 @@
+/*Main Index-----------------------------------------------*/
+
+.mainindex {
+    background-color: $mainColor;
+
+    @include tablet-mini {
+        margin: 0;
+        padding: 0;
+    }
+
+    .fotoinicio {
+        padding: 50px;
+        border-bottom: solid 6px black;
+
+        @include mobile {
+            padding: 0.5rem;
+        }
+
+        .fotorectores {
+            width: 100%;
+
+
+            border-radius: 20px;
+        }
+
+    }
+
+    .facultades {
+        display: flex;
+        flex-direction: column;
+        @extend %titulos;
+
+        section {
+
+            .facultadestitulo {
+                font-family: sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                padding-inline: 3rem;
+
+                @include tablet-mini {
+                    align-items: center;
+                    padding: 0;
+                    margin: 0rem;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+
+/*Main Carreras-------------------------------------------------*/
+
+.carreras-main {
+    background-color: $secondaryColor;
+
+    .carreras-mn-tit {
+        padding-block: 20px;
+        @extend %titulos;
+    }
+
+}
+
+
+
+
+/*Main Contacto----------------------------------------------*/
+.main-contacto {
+    background-color: $secondaryColor;
+    font-family: $mainFont;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+
+    @include tablet-mini {
+        flex-direction: column;
+    }
+
+    .contacto-sctn {
+        font-size: 1rem;
+        line-height: 2rem;
+
+        .contacto-mn-tit {
+            @extend %titulos;
+            margin-bottom: 1rem;
+
+        }
+
+        .contacto-fb-img {
+            display: inline;
+
+            width: 41px;
+            margin-inline: 1rem;
+
+            border-radius: 50%;
+        }
+
+        .contacto-mail-img {
+            display: inline;
+
+            width: 41px;
+            margin-inline: 1rem;
+
+            border-radius: 5px;
+        }
+    }
+
+    .contacto-sctn-form {
+        background-color: $mainColor ;
+        padding: 2rem 5rem 2rem 5rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @include mobile {
+            padding: 1rem;
+        }
+
+        .contacto-form {
+            display: flex;
+            flex-direction: column;
+
+            @include mobile {
+                flex-wrap: wrap;
+                align-items: start;
+                padding: 5px;
+                width: fit-content;
+            }
+
+            label {
+                font-family: $mainFont;
+                font-weight: 600;
+
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                @include tablet-mini {
+                    margin-block: 0.5rem;
+                    width: 100%;
+                }
+
+                input {
+                    border: $menucolor 2px solid;
+                    border-radius: 5px;
+                    margin-inline: 1rem;
+                    width: min-content;
+
+                    @include tablet-mini {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+
+            }
+
+            #carreras-preferidas {
+                margin: 1rem;
+
+                @include tablet-mini {
+                    width: 3rem;
+                    margin-inline: 0;
+
+                }
+            }
+
+            textarea {
+                border: #18337E 2px solid;
+                border-radius: 5px;
+                margin-inline: 1rem;
+                width: min-content;
+
+                @include tablet-mini {
+                    width: 100%;
+                    margin-inline: 2px;
+                }
+
+            }
+
+
+        }
+
+        .contacto-form-btn {
+            align-self: center;
+            justify-self: center;
+            color: white;
+            background-color: $menucolor;
+            border: $secondaryColor solid 2px;
+            border-radius: 5px;
+            padding-block: 0.5rem;
+            padding-inline: 2rem;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+
+
+/*Main Quienes Somos------------------------------------------*/
+.main-qs {
+    .main-qs-tit {
+        background-color: $qsColor;
+        @extend %titulos;
+    }
+
+    .qs-grid-sctn {
+        background-image: url(../img/quienes\ somos\ fondo.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "rec obj"
+            "rec pro";
+        padding: 3rem;
+
+        @include desktop-mini {
+            background-position: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 2fr 1fr;
+            grid-template-areas:
+                "rec obj"
+                "pro pro";
+            padding: 1rem;
+        }
+
+        @include tablet {
+
+            background-position: center;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 2fr 1fr;
+            grid-template-areas:
+                "rec obj"
+                "pro pro";
+            padding: 1rem;
+        }
+
+        @include tablet-mini {
+            background-position: center;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include mobile {
+            padding: 1rem;
+        }
+
+        .qs-sctn {
+            background-color: $qsColor;
+            border-radius: 20px;
+            margin: 3rem;
+            padding: 2rem;
+            opacity: 0.5;
+
+            transition: all, 1s;
+
+
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            & h2 {
+                font-family: $mainFont;
+                font-size: 2rem;
+                padding: 1rem;
+
+            }
+
+            & p {
+                line-height: 2rem;
+
+            }
+
+            @include desktop-mini {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            @include tablet {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            @include tablet-mini {
+                margin: 1rem;
+                padding: 1rem;
+                height: max-content;
+            }
+
+            @include mobile {
+                margin: 0.3rem;
+            }
+
+            @include mobile-mini {
+                font-size: smaller;
+                line-gap-override: 1rem;
+        
+            }
+        }
+
+        .qs-rectorado {
+            grid-area: rec;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "tit img"
+                "p2 p2";
+            align-items: center;
+
+            @include tablet-mini {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .qs-rectorado-tit {
+                grid-area: tit;
+            }
+
+            .qs-mau-img {
+                grid-area: img;
+                width: 150px;
+                border-radius: 50%;
+
+            }
+
+            .qs-rectorado-p2 {
+                grid-area: p2;
+                margin-block: 1rem;
+
+            }
+        }
+
+        .qs-objetivo {
+            grid-area: obj;
+        }
+
+        .qs-proyecto {
+            grid-area: pro;
+        }
+    }
+
+}
+
+
+
+
+
+/*Main Ingreso-----------------------------------------------*/
+
+
+.ingreso-mn {
+    background-color: $secondaryColor;
+    padding: 1rem;
+
+    @include mobile {
+        background-color: $secondaryColor;
+        padding: 1rem;
+    }
+
+
+    & h2 {
+        @extend %titulos;
+
+        @include mobile {
+            font-family: $mainFont;
+            font-size: 1rem;
+        }
+
+        @include mobile-mini {
+        font-size: 1rem;
+        }
+    }
+
+    .ingreso-cart {
+        background-color: $mainColor;
+        border-radius: 20px;
+        margin: 3rem;
+        padding: 5rem;
+
+        @include mobile {
+            background-color: $mainColor;
+            border-radius: 20px;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+@include mobile-mini {
+    border-radius: 20px;
+        margin: 0px;
+        padding: 0px;
+}
+
+        & h3 {
+            @include tamanotexto(2.5rem, 8rem);
+
+            @include mobile {
+                color: white;
+                line-height: 3rem;
+                font-size: smaller;
+            }
+
+            @include mobile-mini {
+                color: white;
+                line-height: 3rem;
+                font-size: smaller;
+            }
+        }
+
+        & p {
+            @include tamanotexto(1.5rem, 3rem);
+
+            @include mobile {
+                color: white;
+                font-size: smaller;
+                line-height: 2rem;
+            }
+
+            @include mobile-mini {
+                color: white;
+        font-size: smaller;
+        line-height: 1rem;
+            }
+        }
+
+    }
+}

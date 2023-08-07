@@ -1,11 +1,7 @@
 @import "./partials/variables";
+@import "./partials/media-queries";
 @import "./partials/reset";
-@import"./partials/carreras";
-@import"./partials/contacto";
-@import "./partials/quienes-somos";
-@import"./partials/ingreso2024";
-
-
-
-
-
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/mains";
+@import "./partials/tarjetitas";
