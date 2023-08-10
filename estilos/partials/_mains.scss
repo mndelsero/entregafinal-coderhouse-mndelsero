@@ -153,6 +153,7 @@
                     border-radius: 5px;
                     margin-inline: 1rem;
                     width: min-content;
+                    padding: 10px;
 
                     @include tablet-mini {
                         width: 100%;
@@ -177,6 +178,8 @@
                 border-radius: 5px;
                 margin-inline: 1rem;
                 width: min-content;
+                padding: 10px;
+
 
                 @include tablet-mini {
                     width: 100%;

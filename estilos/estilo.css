@@ -395,6 +395,7 @@ h5 {
   margin-inline: 1rem;
   width: -moz-min-content;
   width: min-content;
+  padding: 10px;
 }
 @media screen and (max-width: 876px) {
   .main-contacto .contacto-sctn-form .contacto-form label input {
@@ -417,6 +418,7 @@ h5 {
   margin-inline: 1rem;
   width: -moz-min-content;
   width: min-content;
+  padding: 10px;
 }
 @media screen and (max-width: 876px) {
   .main-contacto .contacto-sctn-form .contacto-form textarea {
