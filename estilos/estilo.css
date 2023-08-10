@@ -485,6 +485,7 @@ h5 {
   }
 }
 .main-qs .qs-grid-sctn .qs-sctn {
+  text-align: center;
   background-color: #B084CC;
   border-radius: 20px;
   margin: 3rem;
@@ -538,8 +539,8 @@ h5 {
   grid-area: rec;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "tit img" "p2 p2";
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: "tit tit" "p2 p2";
   align-items: center;
 }
 @media screen and (max-width: 876px) {
@@ -694,7 +695,6 @@ h5 {
   .cartitas .opciones {
     margin-inline: 0;
     -webkit-animation: none;
-    animation: none;
   }
 }
 @media screen and (max-width: 876px) {
@@ -707,7 +707,6 @@ h5 {
 @media screen and (max-width: 299px) {
   .cartitas .opciones {
     -webkit-animation: none;
-    animation: none;
   }
 }
 .cartitas .cartaingenieria .imageningenierias {
@@ -786,8 +785,8 @@ h5 {
   }
 }
 .tarjetitas img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background-size: cover;
   margin: 0;
   border-radius: 50%;
@@ -802,6 +801,8 @@ h5 {
   align-items: start;
   justify-content: center;
   transition: all, 0.5s;
+  padding: 1rem;
+  gap: 1rem;
 }
 @media screen and (max-width: 1024px) and (min-width: 877px) {
   .tarjetitas .tarjetita {

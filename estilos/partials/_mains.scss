@@ -262,6 +262,7 @@
         }
 
         .qs-sctn {
+            text-align: center;
             background-color: $qsColor;
             border-radius: 20px;
             margin: 3rem;
@@ -319,9 +320,10 @@
             grid-area: rec;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr ;
             grid-template-areas:
-                "tit img"
+                "tit tit"
+              
                 "p2 p2";
             align-items: center;
 

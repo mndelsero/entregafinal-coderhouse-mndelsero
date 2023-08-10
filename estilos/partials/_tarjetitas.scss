@@ -177,11 +177,12 @@ $colorfacultad in $facultades {
 
 
     & img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         background-size: cover;
         margin: 0;
         border-radius: 50%;
+
 
     }
 
@@ -197,6 +198,8 @@ $colorfacultad in $facultades {
         align-items: start;
         justify-content: center;
         transition: all, 0.5s;
+        padding: 1rem;
+        gap: 1rem;
 
         @include tablet {
             display: flex;
