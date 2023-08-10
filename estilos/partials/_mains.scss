@@ -120,12 +120,13 @@
         align-items: start;
 
         @include mobile {
-            padding: 1rem;
+            padding: 0.2rem;
         }
 
         .contacto-form {
             display: flex;
             flex-direction: column;
+            width: 100%;
 
             @include mobile {
                 flex-wrap: wrap;
