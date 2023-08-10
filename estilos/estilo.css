@@ -379,6 +379,7 @@ h5 {
 .main-contacto .contacto-sctn-form .contacto-form label {
   font-family: sans-serif;
   font-weight: 600;
+  width: 100%;
 }
 .main-contacto .contacto-sctn-form .contacto-form label:hover {
   transform: scale(1.05);
@@ -386,15 +387,16 @@ h5 {
 @media screen and (max-width: 876px) {
   .main-contacto .contacto-sctn-form .contacto-form label {
     margin-block: 0.5rem;
-    width: 100%;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1rem;
   }
 }
 .main-contacto .contacto-sctn-form .contacto-form label input {
   border: #18337E 2px solid;
   border-radius: 5px;
   margin-inline: 1rem;
-  width: -moz-min-content;
-  width: min-content;
+  width: 100%;
   padding: 10px;
 }
 @media screen and (max-width: 876px) {
@@ -416,8 +418,7 @@ h5 {
   border: #18337E 2px solid;
   border-radius: 5px;
   margin-inline: 1rem;
-  width: -moz-min-content;
-  width: min-content;
+  width: 100%;
   padding: 10px;
 }
 @media screen and (max-width: 876px) {

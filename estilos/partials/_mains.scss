@@ -137,6 +137,7 @@
             label {
                 font-family: $mainFont;
                 font-weight: 600;
+                width: 100%;
 
 
                 &:hover {
@@ -145,14 +146,15 @@
 
                 @include tablet-mini {
                     margin-block: 0.5rem;
-                    width: 100%;
+                    width: fit-content;
+                    padding: 1rem;
                 }
 
                 input {
                     border: $menucolor 2px solid;
                     border-radius: 5px;
                     margin-inline: 1rem;
-                    width: min-content;
+                    width: 100%;
                     padding: 10px;
 
                     @include tablet-mini {
@@ -177,7 +179,7 @@
                 border: #18337E 2px solid;
                 border-radius: 5px;
                 margin-inline: 1rem;
-                width: min-content;
+                width: 100%;
                 padding: 10px;
 
 
