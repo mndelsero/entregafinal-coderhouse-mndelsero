@@ -18,6 +18,8 @@
     @include tablet-mini {
         flex-direction: column;
         align-items: start;
+        gap: 0;
+        padding-bottom: 0;
     }
 
     .tituloredes {
@@ -141,6 +143,8 @@
                         display: flex;
                         justify-content: center;
                         padding-inline: 0;
+                        padding-block: 5px;
+
                     }
                 }
 

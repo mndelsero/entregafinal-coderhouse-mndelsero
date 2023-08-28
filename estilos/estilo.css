@@ -76,6 +76,8 @@ h5 {
   .encabezado {
     flex-direction: column;
     align-items: start;
+    gap: 0;
+    padding-bottom: 0;
   }
 }
 .encabezado .tituloredes {
@@ -178,6 +180,7 @@ h5 {
     display: flex;
     justify-content: center;
     padding-inline: 0;
+    padding-block: 5px;
   }
 }
 .encabezado .menu-sctn .menuindex .menu-div:nth-child(1) {
