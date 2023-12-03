@@ -5,19 +5,23 @@
 
     @include tablet-mini {
         margin: 0;
-        padding: 0;
+        padding: 1rem;
     }
 
     .fotoinicio {
         padding: 50px;
         border-bottom: solid 6px black;
 
+
         @include mobile {
             padding: 0.5rem;
+            border-bottom: solid 3px black;
+
         }
 
         .fotorectores {
             width: 100%;
+            max-height: 80vh;
 
 
             border-radius: 20px;
@@ -59,6 +63,7 @@
     background-color: $secondaryColor;
 
     .carreras-mn-tit {
+        padding-inline: 2rem;
         padding-block: 20px;
         @extend %titulos;
     }
@@ -80,9 +85,13 @@
 
     @include tablet-mini {
         flex-direction: column;
+        padding-inline: 0.8rem;
     }
 
     .contacto-sctn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 1rem;
         line-height: 2rem;
 
@@ -92,22 +101,44 @@
 
         }
 
-        .contacto-fb-img {
-            display: inline;
+        .contacto-sctn-txt {
 
-            width: 41px;
-            margin-inline: 1rem;
+            a {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: black;
 
-            border-radius: 50%;
+                &:hover {
+                    color: $mainColor;
+                }
+            }
         }
 
-        .contacto-mail-img {
-            display: inline;
 
-            width: 41px;
-            margin-inline: 1rem;
 
-            border-radius: 5px;
+        .redes-contacto {
+            a {
+                .contacto-mail-img {
+                    display: inline;
+
+                    width: 41px;
+                    margin-inline: 1rem;
+
+                    border-radius: 5px;
+                }
+
+                .contacto-fb-img {
+                    display: inline;
+
+                    width: 41px;
+                    margin-inline: 1rem;
+
+                    border-radius: 50%;
+                }
+            }
         }
     }
 
@@ -130,12 +161,14 @@
 
             @include mobile {
                 flex-wrap: wrap;
-                align-items: start;
+                align-items: center;
                 padding: 5px;
-                width: fit-content;
+                width: 100%;
+
             }
 
             label {
+
                 font-family: $mainFont;
                 font-weight: 600;
                 width: 100%;
@@ -147,11 +180,17 @@
 
                 @include tablet-mini {
                     margin-block: 0.5rem;
-                    width: fit-content;
+                    width: 100%;
                     padding: 1rem;
                 }
 
+                @include mobile {
+                    padding: 0rem;
+                    width: 10rem;
+                }
+
                 input {
+                    align-self: center;
                     border: $menucolor 2px solid;
                     border-radius: 5px;
                     margin-inline: 1rem;
@@ -161,47 +200,80 @@
                     @include tablet-mini {
                         width: 100%;
                         margin: 0;
+                        padding: 5px;
+                    }
+
+                    @include mobile {
+                        width: 10rem;
                     }
 
                     @include mobile-mini {
-                        
-                            width: 7rem;
-                        
-                        
+
+                        width: 7rem;
+
+
                     }
                 }
 
             }
 
-            #carreras-preferidas {
-                margin: 1rem;
+            .preferidas {
 
-                @include tablet-mini {
-                    width: 3rem;
-                    margin-inline: 0;
-
-                }
-            }
-
-            textarea {
-                border: #18337E 2px solid;
-                border-radius: 5px;
-                margin-inline: 1rem;
-                width: 100%;
-                padding: 10px;
-
-
-                @include tablet-mini {
+                .carreras-preferidas {
+                    margin: 1rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
                     width: 100%;
-                    margin-inline: 2px;
+
+
+                    @include tablet-mini {
+                        width: 100%;
+                        margin-inline: 0;
+                        justify-content: space-around;
+                        padding: 0rem;
+
+                    }
+
+
+
                 }
 
-                @include mobile-mini {
-                        
-                    width: 7rem;
-                
-                
             }
+
+            .consulta {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                textarea {
+                    border: #18337E 2px solid;
+                    border-radius: 5px;
+                    margin-inline: 1rem;
+                    width: 100%;
+                    padding: 10px;
+
+
+                    @include tablet-mini {
+                        width: 100%;
+                        margin-inline: 0rem;
+                        padding: 5px;
+                    }
+
+                    @include mobile {
+                        width: 80%;
+                    }
+
+                    @include mobile-mini {
+
+                        width: 7rem;
+
+
+                    }
+
+
+                }
             }
 
 
@@ -229,9 +301,17 @@
 
 /*Main Quienes Somos------------------------------------------*/
 .main-qs {
-    .main-qs-tit {
+    .main-qs-tit {display: flex;
+        justify-content: center;
         background-color: $qsColor;
         @extend %titulos;
+       
+
+        h2{
+            @include mobile{
+                font-size: 1.5rem;
+            }
+        }
     }
 
     .qs-grid-sctn {
@@ -301,6 +381,9 @@
                 font-size: 2rem;
                 padding: 1rem;
 
+                @include mobile{
+                    font-size: 1.2rem;
+                }
             }
 
             & p {
@@ -322,16 +405,22 @@
                 margin: 1rem;
                 padding: 1rem;
                 height: max-content;
+                opacity: 1;
+
+                &:hover{
+                    opacity: 1;
+                }
             }
 
             @include mobile {
                 margin: 0.3rem;
+                font-size: 0.8rem;
             }
 
             @include mobile-mini {
-                font-size: smaller;
+              
                 line-gap-override: 1rem;
-        
+
             }
         }
 
@@ -339,10 +428,10 @@
             grid-area: rec;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 0.5fr 1fr ;
+            grid-template-rows: 0.5fr 1fr;
             grid-template-areas:
                 "tit tit"
-              
+
                 "p2 p2";
             align-items: center;
 
@@ -369,11 +458,16 @@
             }
         }
 
-        .qs-objetivo {
+        .qs-objetivo {display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             grid-area: obj;
         }
 
         .qs-proyecto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             grid-area: pro;
         }
     }
@@ -388,12 +482,15 @@
 
 
 .ingreso-mn {
+    display: flex;
+    flex-direction: column;
     background-color: $secondaryColor;
     padding: 1rem;
 
     @include mobile {
         background-color: $secondaryColor;
         padding: 1rem;
+        align-items: center
     }
 
 
@@ -402,11 +499,11 @@
 
         @include mobile {
             font-family: $mainFont;
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         @include mobile-mini {
-        font-size: 1rem;
+            font-size: 1rem;
         }
     }
 
@@ -423,11 +520,11 @@
             padding: 1rem;
         }
 
-@include mobile-mini {
-    border-radius: 20px;
-        margin: 0px;
-        padding: 0px;
-}
+        @include mobile-mini {
+            border-radius: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
 
         & h3 {
             @include tamanotexto(2.5rem, 8rem);
@@ -448,6 +545,17 @@
         & p {
             @include tamanotexto(1.5rem, 3rem);
 
+            a{  font-family: 'Inter';
+                font-style: normal;
+               
+                color: white;
+
+                &:hover {
+                    color: $mainColor;
+                }
+
+            }
+
             @include mobile {
                 color: white;
                 font-size: smaller;
@@ -456,8 +564,8 @@
 
             @include mobile-mini {
                 color: white;
-        font-size: smaller;
-        line-height: 1rem;
+                font-size: smaller;
+                line-height: 1rem;
             }
         }
 

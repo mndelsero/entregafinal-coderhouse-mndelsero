@@ -1,14 +1,14 @@
 /*desktopmini--------------------------*/
 
 @mixin desktop-mini {
-    @media screen and (max-width:1200px) and (min-width:1025px) {
+    @media screen and (max-width:1250px) {
         @content;
     }
 }
 /*tablet --------------------------------*/
 
 @mixin tablet {
-    @media screen and (max-width:1024px) and (min-width:877px){
+    @media screen and (max-width:1025px){
         @content;
     }
 }
@@ -17,7 +17,7 @@
 /*tabletmini----------------------------*/
 
 @mixin tablet-mini {
-    @media screen and (max-width:876px){
+    @media screen and (max-width:877px){
         @content;
     }
 }

@@ -36,7 +36,16 @@
     </header>
 
 
+    <nav class="menu-sctn-tablet">
+        <ul class="menuindex">
+            <li class="menu-div menu-li1"><a href="../index.html" class=" menu">Inicio</a></li>
+            <li class="menu-div menu-li2"><a href="./carreras.html" class=" menu">Carreras</a></li>
+            <li class="menu-div menu-li3"><a href="./contacto.html" class=" menu">Contacto</a></li>
+            <li class="menu-div menu-li4"><a href="./quienes-somos.html" class=" menu">Quienes somos</a></li>
+            <li class="menu-div menu-li5"><a href="./ingreso2024.html" class=" menu">Ingreso 2024</a></li>
+        </ul>
 
+    </nav>
 
 
 
@@ -58,18 +67,22 @@
             <p class="contacto-sctn-txt">-Necesitas ayuda especifica? <br><br>
 
                 -Escribinos a nuestro Whatsapp de ayuda: <br>
-                +54 9 261 5898585 <br><br>
+                <a href="https://wa.me/5492615798585" target="_blank">+54 9 261 5798686</a><br><br>
 
                 -Escribinos al mail: <br>
-                ULAayudas@edu.ar <br><br>
+                <a href="">ULAayudas@edu.ar</a> <br><br>
 
                 -Rectorado: +54 9 261 7904848 <br>
-                ULArectorado@edu.ar <br><br>
+                <a href="">ULArectorado@edu.ar </a> <br><br>
 
-                Redes Sociales:</p>
-            <div>
-                <img src="../img/fb logo.png" alt="fb-logo" class="contacto-fb-img">
-                <img src="../img/Gmail_Logo_256px.png" alt="mail-logo" class="contacto-mail-img">
+                Redes Sociales:
+            </p>
+            <div class="redes-contacto">
+                <a href="https://www.facebook.com/mauro.delsero.5" target="_blank"><img src="../img/fb logo.png"
+                        alt="logo-fb" class="contacto-fb-img"></a>
+                <a href="mailto:mndelsero@gmail.com" target="_blank"> <img src="../img/Gmail_Logo_256px.png"
+                        alt="logo-email" class="contacto-mail-img"></a>
+
             </div>
 
 
@@ -81,57 +94,57 @@
             <form action="" class="contacto-form">
                 <label for="nombre">
                     -Nombre
-                    <input type="text" id="nombre" required>
+                    <input type="text" id="nombre" required placeholder="ingresa tu nombre">
                 </label>
 
                 <br><br>
 
                 <label for="telefono">-Telefono
-                    <input type="number" id="telefono" required>
+                    <input type="number" id="telefono" required placeholder="ingresa tu telefono">
                 </label>
 
                 <br><br>
 
                 <label for="email">-E-mail
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" required placeholder="ingresa tu mail">
                 </label>
 
                 <br><br>
 
-                <label for="carreras-preferidas">
+                <label for="" class="preferidas">
                     -Carreras de preferencia
                     <br>
-                    <label for=""><input type="checkbox" name="carreras-check" id="carreras-preferidas">Ingenieria
-                        Mecanica</label>
+                    <label for="" class="carreras-preferidas">Ingenieria Mecanica <input type="checkbox" name="carreras-check"
+                            ></label>
                     <br>
-                    <label for=""><input type="checkbox" name="carreras-check" id="carreras-preferidas">Ingenieria
-                        Quimica</label>
+                    <label for="" class="carreras-preferidas">Ingenieria
+                        Quimica<input type="checkbox" name="carreras-check" ></label>
                     <br>
-                    <label for=""><input type="checkbox" name="carreras-check" id="carreras-preferidas">Ingenieria
-                        Industrial</label>
+                    <label for="" class="carreras-preferidas">Ingenieria
+                        Industrial<input type="checkbox" name="carreras-check" ></label>
                     <br>
-                    <label for=""><input type="checkbox" name="carreras-check"
-                            id="carreras-preferidas">Cyberseguridad</label>
+                    <label for="" class="carreras-preferidas">Cyberseguridad<input type="checkbox" name="carreras-check"
+                            ></label>
                     <br>
-                    <label for=""> <input type="checkbox" name="carreras-check" id="carreras-preferidas">Full Stack
-                        Developement</label>
+                    <label for="" class="carreras-preferidas"> Full Stack
+                        Developement<input type="checkbox" name="carreras-check" ></label>
                     <br>
-                    <label for=""> <input type="checkbox" name="carreras-check" id="carreras-preferidas">Web
-                        Marketing</label>
+                    <label for="" class="carreras-preferidas"> Web
+                        Marketing<input type="checkbox" name="carreras-check" ></label>
                     <br>
-                    <label for=""> <input type="checkbox" name="carreras-check" id="carreras-preferidas">Asesoria
-                        Familiar</label>
+                    <label for="" class="carreras-preferidas">Asesoria
+                        Familiar <input type="checkbox" name="carreras-check" ></label>
                     <br>
-                    <label for=""> <input type="checkbox" name="carreras-check" id="carreras-preferidas">Letras e
-                        Idiomas</label>
+                    <label for="" class="carreras-preferidas"> Letras e
+                        Idiomas<input type="checkbox" name="carreras-check" ></label>
                     <br>
-                    <label for=""> <input type="checkbox" name="carreras-check" id="carreras-preferidas">Leyes</label>
+                    <label for="" class="carreras-preferidas"> Leyes<input type="checkbox" name="carreras-check" ></label>
 
                 </label>
 
                 <br><br>
 
-                <label for="consulta">
+                <label for="consulta" class="consulta">
                     -Deja tu Consulta
                     <textarea name="" id="consulta" cols="30" rows="3">Escribe tu consulta aqui</textarea>
                 </label>
@@ -168,15 +181,18 @@
 
 
 
-
     <footer class="pieindex">
         <div class="piedivision rectores">
             <h2 class="pietitulo">Rectores contacto</h2>
-            <p class="piecontacto">Rector Facultad de Moreno <br> Mauro Del Sero <br>
-                mndelsero@gmail.com <br>
-                2615798686</p>
-            <img src="../img/fb logo.png" alt="fb-logo" class="fbmenu">
-            <img src="../img/Gmail_Logo_256px.png" alt="mail-logo" class="mailmenu">
+            <p class="piecontacto">Rector Facultad de Moreno: <br> Mauro Del Sero <br>
+                <a href="mailto:mndelsero@gmail.com" target="_blank">mndelsero@gmail.com </a> <br>
+                <a href="https://wa.me/5492615798585" target="_blank">2615798686</a>
+            </p>
+            <a href="https://www.facebook.com/mauro.delsero.5" target="_blank"><img src="../img/fb logo.png"
+                    alt="logo-fb" class="fbmenu"></a>
+            <a href="mailto:mndelsero@gmail.com" target="_blank"> <img src="../img/Gmail_Logo_256px.png"
+                    alt="logo-email" class="mailmenu"></a>
+
 
         </div>
         <br>
@@ -197,6 +213,7 @@
                 Ingresos: <br>
                 ingresolangostura@edu.ar
             </p>
+
         </div>
     </footer>
 </body>

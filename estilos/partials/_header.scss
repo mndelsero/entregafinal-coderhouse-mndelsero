@@ -2,23 +2,27 @@
     background-color: $menucolor;
     display: flex;
     gap: 2rem;
-    align-items: end;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 
     @include tablet {
 
         display: flex;
-        justify-content: start;
-        align-items: start;
-        gap: 2rem;
-        padding-bottom: 2rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     @include tablet-mini {
         flex-direction: column;
-        align-items: start;
-        gap: 0;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
         padding-bottom: 0;
     }
 
@@ -61,109 +65,90 @@
  
     }
 
-    .menu-sctn {
+    
+.menu-sctn {
+    display: flex;
+    background-color: #18337E;
+    flex-direction: row;
+    align-items: end;
+    justify-content: start;
+  
+
+  
+
+    @include tablet-mini {
+        display: none;
+       
+    }
+
+    & .menu-sin-bootstrap {
+        margin: 2.5px;
+    }
+
+    .menuindex {
         display: flex;
         background-color: #18337E;
         flex-direction: row;
         align-items: end;
+
         justify-content: start;
 
       
 
-        @include tablet-mini {
-            display: flex;
-            align-self: center;
-            align-items: start;
-            justify-content: start;
-            width: 100%;
+
+
+        .menu-div {
+            -webkit-animation: slide-in-bck-center .7s cubic-bezier(.25, .46, .45, .94) both;
+            animation: slide-in-bck-center .7s cubic-bezier(.25, .46, .45, .94) both;
+
+          
+            .menu {
+
+
+                background-color: $menuItemColor;
+                min-width: 100%;
+
+                border: solid 1px $mainColor;
+                margin: 0px;
+                padding: 20px 20px 15px 20px;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+                color: $mainColor;
+
+
+
+
+
+                &:hover {
+                    color: $secondaryColor;
+                    border: solid 3px $secondaryColor;
+                }
+
+
+               
+            }
+
+
         }
 
-        & .menu-sin-bootstrap {
-            margin: 2.5px;
-        }
-
-        .menuindex {
-            display: flex;
-            background-color: #18337E;
-            flex-direction: row;
-            align-items: end;
-
-            justify-content: start;
-
-            @include tablet-mini {
-                width: 100%;
-                flex-direction: column;
-                align-items: start;
-                justify-content: start;
-
+        @for $menu from 1 through 5 {
+            .menu-div:nth-child(#{$menu}) {
+                animation-delay: $menu*0.3s ;
             }
-
-
-
-            .menu-div {
-                -webkit-animation: slide-in-bck-center .7s cubic-bezier(.25, .46, .45, .94) both;
-                animation: slide-in-bck-center .7s cubic-bezier(.25, .46, .45, .94) both;
-
-                @include tablet-mini {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    padding: 0px;
-                    margin: 0px;
-                }
-
-                .menu {
-
-
-                    background-color: $menuItemColor;
-                    min-width: 100%;
-
-                    border: solid 1px $mainColor;
-                    margin: 0px;
-                    padding: 20px 20px 15px 20px;
-                    font-family: $mainFont;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 20px;
-                    color: $mainColor;
-
-
-
-
-
-                    &:hover {
-                        color: $secondaryColor;
-                        border: solid 3px $secondaryColor;
-                    }
-
-
-                    @include tablet-mini {
-                       max-width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        padding-inline: 0;
-                        padding-block: 5px;
-
-                    }
-                }
-
-
-            }
-
-            @for $menu from 1 through 5 {
-                .menu-div:nth-child(#{$menu}) {
-                    animation-delay: $menu*0.3s ;
-                }
-            }
-
-
-
         }
 
 
 
     }
+
+
+
+}
+
+    
 
 }
 
@@ -194,4 +179,107 @@
         transform: translateZ(0);
         opacity: 1
     }
+}
+
+
+.menu-sctn-tablet {
+
+    background-color: #18337E;
+    display: none;
+
+  
+
+    @include tablet-mini {
+        display: flex;
+        align-self: center;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+       
+    }
+
+    & .menu-sin-bootstrap {
+        margin: 2.5px;
+    }
+
+    .menuindex {
+     
+        background-color: #18337E;
+
+
+        @include tablet-mini {
+            width: 100%;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+           
+
+        }
+
+
+
+        .menu-div {
+            -webkit-animation: slide-in-bck-center .7s cubic-bezier(.25, .46, .45, .94) both;
+            animation: slide-in-bck-center .7s cubic-bezier(.25, .46, .45, .94) both;
+
+            @include tablet-mini {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .menu {
+
+
+                background-color: $menuItemColor;
+                min-width: 100%;
+
+                border: solid 1px $mainColor;
+                margin: 0px;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+                color: $mainColor;
+
+
+
+
+
+                &:hover {
+                    color: $secondaryColor;
+                    border: solid 3px $secondaryColor;
+                }
+
+
+                @include tablet-mini {
+                   max-width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding-inline: 0;
+                    padding-block: 0.5rem;
+
+                }
+            }
+
+
+        }
+
+        @for $menu from 1 through 5 {
+            .menu-div:nth-child(#{$menu}) {
+                animation-delay: $menu*0.3s ;
+            }
+        }
+
+
+
+    }
+
+
+
 }

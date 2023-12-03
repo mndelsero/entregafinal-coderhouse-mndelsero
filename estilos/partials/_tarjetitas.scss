@@ -3,14 +3,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
-    @include tablet {
-        flex-direction: column;
-
-    }
 
     @include tablet-mini {
-        flex-direction: column;
         margin: 0;
         padding: 0;
     }
@@ -20,6 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 20rem;
         margin: 50px;
         border-radius: 20px;
         padding: 2rem;
@@ -28,8 +25,8 @@
         animation:scale-up-bottom 2s cubic-bezier(.39,.575,.565,1.000) infinite alternate both;
         
         & h2 {
-            @include mobile-mini {
-                font-size: smaller;
+            @include mobile {
+                font-size: 1.5rem;
             }
         }
 
@@ -52,7 +49,7 @@
         @include tablet-mini {
             margin-block: 4rem;
             margin-inline: 0;
-            padding: 0;
+            padding: 0.5rem;
         }
 
         @include mobile-mini {
@@ -204,6 +201,7 @@ $colorfacultad in $facultades {
         @include tablet {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
 
@@ -225,6 +223,7 @@ $colorfacultad in $facultades {
         @include mobile {
             display: flex;
             flex-direction: column;
+            padding: 0.5rem;
         }
 
 
@@ -236,6 +235,9 @@ $colorfacultad in $facultades {
         }
 
         .tarjetita-txt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             margin: 0;
             grid-area: txt;
